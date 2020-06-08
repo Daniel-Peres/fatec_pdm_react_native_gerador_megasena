@@ -28,10 +28,9 @@ export default function App() {
         data={numeros}
         renderItem = {
           numero => (
-            <View key={numero.index} style={styles.itemNaLista}>
-              <View>
-              <Text style={styles.textoDezena}>Dezena {numero.index +1 }</Text></View>
-              <Text style={styles.numeroDezena}>{numero.item}</Text>
+            <View style={styles.itemNaLista}>              
+                <Text style={styles.textoDezena}>Dezena {numero.index +1 }</Text>
+                <Text style={styles.numeroDezena}>{numero.item}</Text>              
             </View>
           )
         }>
